@@ -1,0 +1,5 @@
+grafo
+    P(k) ~ k^-gamma,  2 < gamma < 3  -> livre de escala
+
+grafo de visibilidade
+    P(k) ~ k^gamma -> sequencia fractal

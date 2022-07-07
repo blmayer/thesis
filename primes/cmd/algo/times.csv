@@ -1,0 +1,17 @@
+threads,algo,d,n,time
+1,horizontal,11,100,0.134
+1,horizontal,11,500,1.332
+1,horizontal,11,1000,9.765
+1,horizontal,11,1500,21.443
+1,horizontal,11,2000,43.529
+100,horizontal,11,100,0.160
+500,horizontal,11,500,3.153
+1000,horizontal,11,1000,11.791
+1500,horizontal,11,1500,21.443
+200,horizontal,11,1000,3.482
+100,horizontal,11,1000,1.850
+50,horizontal,11,1000,1.050
+20,horizontal,11,1000,0.647
+10,horizontal,11,1000,0.412
+6,horizontal,11,1000,0.395
+100,horizontal,11,2000,5.439
