@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     22835,        524]
-NotebookOptionsPosition[     21440,        496]
-NotebookOutlinePosition[     21837,        512]
-CellTagsIndexPosition[     21794,        509]
+NotebookDataLength[     25559,        558]
+NotebookOptionsPosition[     24063,        529]
+NotebookOutlinePosition[     24468,        545]
+CellTagsIndexPosition[     24425,        542]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -22,9 +22,11 @@ Cell[BoxData[
  RowBox[{
   RowBox[{"seq", "=", 
    RowBox[{"{", 
-    RowBox[{"5", ",", "16", ",", "24", ",", "72"}], "}"}]}], ";"}]], "Input",
- CellChangeTimes->{{3.858188248034588*^9, 3.8581882640487432`*^9}},
- CellLabel->"In[2]:=",ExpressionUUID->"7293aa46-9672-453f-951c-0746dbaa69a7"],
+    RowBox[{"5", ",", "19", ",", "24", ",", "72"}], "}"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.858188248034588*^9, 3.8581882640487432`*^9}, {
+  3.895249895360628*^9, 3.895249899895454*^9}, {3.895249934344198*^9, 
+  3.895249965820917*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"7293aa46-9672-453f-951c-0746dbaa69a7"],
 
 Cell[BoxData[
  RowBox[{"ListPlot", "[", 
@@ -49,54 +51,24 @@ Cell[BoxData[
    3.859825898456532*^9, 3.8598259450762444`*^9}, 3.894729699112994*^9, {
    3.8947304779486322`*^9, 3.894730494025323*^9}, {3.894805857276253*^9, 
    3.8948058621494136`*^9}, {3.8948059088126864`*^9, 3.894805920922312*^9}},
- CellLabel->"In[5]:=",ExpressionUUID->"6a43f90b-0736-406f-ba05-c6bc1d5f7f87"],
+ CellLabel->"In[8]:=",ExpressionUUID->"6a43f90b-0736-406f-ba05-c6bc1d5f7f87"],
 
 Cell[BoxData[
  GraphicsBox[{{}, 
-   GraphicsComplexBox[{{1., 5.}, {2., 16.}, {3., 24.}, {4., 72.}, {1., 0.}, {
-    2., 0.}, {3., 0.}, {4., 0.}, {1., 5.}, {2., 16.}, {3., 24.}, {4., 
+   GraphicsComplexBox[{{1., 5.}, {2., 19.}, {3., 24.}, {4., 72.}, {1., 0.}, {
+    2., 0.}, {3., 0.}, {4., 0.}, {1., 5.}, {2., 19.}, {3., 24.}, {4., 
     72.}}, {{{}, {}, {}, {}, 
       {RGBColor[0.368417, 0.506779, 0.709798], Opacity[0.3], LineBox[{5, 1}], 
        LineBox[{6, 2}], LineBox[{7, 3}], LineBox[{8, 4}]}}, 
      {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
       0.012833333333333334`], AbsoluteThickness[1.6], 
-      PointBox[{9, 10, 11, 12}]}}], {
-    {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.012833333333333334`],
-      AbsoluteThickness[1.6], PointBox[{}]}, {
-     {Thickness[0.004073802778041122], StrokeForm[{RGBColor[
-      0.368417, 0.506779, 0.709798], Opacity[1.]}], EdgeForm[{GrayLevel[0.], 
-      Opacity[1.]}], EdgeForm[None], 
-      LineBox[{{0.9731359201516466, 4.7913426233507295`}, {
-       1.9875787738646236`, 15.964893930888607`}}]}, 
-     {Thickness[0.004073802778041122], StrokeForm[{RGBColor[
-      0.368417, 0.506779, 0.709798], Opacity[1.]}], EdgeForm[{GrayLevel[0.], 
-      Opacity[1.]}], EdgeForm[None], 
-      LineBox[{{1.9853722157355662`, 15.967758000424055`}, {2.98802026727531, 
-       24.069393435581755`}}]}, 
-     {Thickness[0.004073802778041122], StrokeForm[{RGBColor[
-      0.368417, 0.506779, 0.709798], Opacity[1.]}], EdgeForm[{GrayLevel[0.], 
-      Opacity[1.]}], EdgeForm[None], 
-      LineBox[{{4.012121804077255, 72.43243014304453}, {3.003575822822569, 
-       24.652350243331938`}}]}, 
-     {Thickness[0.004073802778041122], StrokeForm[{RGBColor[
-      0.368417, 0.506779, 0.709798], Opacity[1.]}], EdgeForm[{GrayLevel[0.], 
-      Opacity[1.]}], EdgeForm[None], 
-      LineBox[{{0.9886220939107616, 5.006088703313949}, {3.9965662485299953`, 
-       72.07354030566285}}]}, 
-     {Thickness[0.004073802778041122], StrokeForm[{RGBColor[
-      0.368417, 0.506779, 0.709798], Opacity[1.]}], EdgeForm[{GrayLevel[0.], 
-      Opacity[1.]}], EdgeForm[None], 
-      LineBox[{{1.9834062391639193`, 16.183997303705475`}, {3.988702342243406,
-        71.85436562722381}}]}, 
-     {Thickness[0.004073802778041122], Dashing[{Medium, Medium}], CapForm[
-      "Round"], StrokeForm[{Hue[0.08333333333333333, 0.6666666666666666, 1.], 
-      Opacity[1.]}], EdgeForm[{GrayLevel[0.], Opacity[1.]}], EdgeForm[None], 
-      LineBox[{{0.9886220939107616, 5.006088703313949}, {2.9998161267051904`, 
-       23.85511104907215}}]}}}, 
-   {CapForm[Square], 
-    {AbsoluteThickness[1.5], CapForm[Square], 
-     {CapForm[Square], 
-      {CapForm[Square], 
+      PointBox[{9, 10, 11, 12}]}}], {{{{}, {}, {}, {}, 
+      {RGBColor[0.368417, 0.506779, 0.709798], Opacity[0.3], LineBox[{}], 
+       LineBox[{}], LineBox[{}], LineBox[{}]}}, 
+     {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+      0.012833333333333334`], AbsoluteThickness[1.6], PointBox[{}]}}, {
+     {Dashing[{Medium, Medium}], CapForm[Square], 
+      {AbsoluteThickness[1.5], CapForm[Square], 
        {CapForm[Square], 
         {CapForm[Square], 
          {CapForm[Square], 
@@ -123,18 +95,56 @@ Cell[BoxData[
                     {CapForm[Square], 
                     {CapForm[Square], 
                     {CapForm[Square], 
-                    LineBox[{{2.1777776249010117`*^-9, 5.058064553895967}, {
-                    0.9722222238814809, 
-                    5.058064553895967}}]}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}, 
-   {AbsoluteThickness[1.5], CapForm[Square], 
-    LineBox[{{2.1777776249010117`*^-9, 16.041290354489853`}, {
-     1.991111112226962, 16.041290354489853`}}]}, 
-   {AbsoluteThickness[1.5], CapForm[Square], 
-    LineBox[{{2.1777775693898604`*^-9, 24.134193575980078`}, {
-     2.986666667251554, 24.134193575980078`}}]}, 
-   {AbsoluteThickness[1.5], CapForm[Square], 
-    LineBox[{{0.023333335498666397`, 72.11354838910076}, {4.013333333370665, 
-     72.11354838910076}}]}},
+                    {CapForm[Square], 
+                    {CapForm[Square], 
+                    LineBox[{{0.00786390828020389, 5.2224455628054915`}, {
+                    0.9800861299839063, 
+                    5.2224455628054915`}}]}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}, 
+     {AbsoluteThickness[1.5], Dashing[{Medium, Medium}], CapForm[Square], 
+      LineBox[{{0.013761837995143522`, 19.054942183106995`}, {
+       2.0048729480443264`, 19.054942183106995`}}]}, 
+     {AbsoluteThickness[1.5], Dashing[{Medium, Medium}], CapForm[Square], 
+      LineBox[{{0.019659767710083265`, 24.07939990645052}, {3.006326432783859,
+        24.07939990645052}}]}, 
+     {AbsoluteThickness[1.5], Dashing[{Medium, Medium}], CapForm[Square], 
+      LineBox[{{0.00760552274133422, 72.27792939801017}, {3.997605520613331, 
+       72.27792939801017}}]}}}, 
+   {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.012833333333333334`], 
+    Thickness[0.004073802778041122], StrokeForm[Opacity[1.]], EdgeForm[{
+    RGBColor[0.36841382467383843`, 0.5067826352330815, 0.7098039215686275], 
+    Opacity[1.], Thickness[0.004073802778041122]}], EdgeForm[None], 
+    ArrowBox[{{2.0069548937672, 18.95860957392921}, {2.986011226447185, 
+     23.999627178027346`}}]}, 
+   {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.012833333333333334`], 
+    Thickness[0.004073802778041122], StrokeForm[Opacity[1.]], EdgeForm[{
+    RGBColor[0.36841382467383843`, 0.5067826352330815, 0.7098039215686275], 
+    Opacity[1.], Thickness[0.004073802778041122]}], EdgeForm[None], 
+    ArrowBox[{{1.0043068422274557`, 4.931430153830092}, {1.9833631749074412`, 
+     18.958609573929223`}}]}, 
+   {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.012833333333333334`], 
+    Thickness[0.004073802778041122], StrokeForm[Opacity[1.]], EdgeForm[{
+    RGBColor[0.36841382467383843`, 0.5067826352330815, 0.7098039215686275], 
+    Opacity[1.], Thickness[0.004073802778041122]}], EdgeForm[None], 
+    ArrowBox[{{0.998408912512516, 4.931430153830092}, {3.982761348271991, 
+     71.99888175617899}}]}, 
+   {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.012833333333333334`], 
+    Thickness[0.004073802778041122], StrokeForm[Opacity[1.]], EdgeForm[{
+    RGBColor[0.36841382467383843`, 0.5067826352330815, 0.7098039215686275], 
+    Opacity[1.], Thickness[0.004073802778041122]}], EdgeForm[None], 
+    ArrowBox[{{3.009602945306945, 24.21880185646637}, {3.9945572077018694`, 
+     71.56053239930088}}]}, 
+   {Thickness[0.004073802778041122], Dashing[{Medium, Medium}], StrokeForm[{
+    Hue[0.02777777798473835, 0.6756756901741028, 1.], Opacity[1.]}], EdgeForm[
+    GrayLevel[0]], EdgeForm[None], 
+    LineBox[{{3.0037050155920055`, 23.999627178027325`}, {0.9984089125125153, 
+     4.931430153830114}}]}, 
+   {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.012833333333333334`], 
+    Thickness[0.004073802778041122], StrokeForm[{Hue[
+    0.08333333333333333, 1., 1.], Opacity[1.]}], EdgeForm[{RGBColor[
+    0.36841382467383843`, 0.5067826352330815, 0.7098039215686275], Opacity[
+    1.], Thickness[0.004073802778041122]}], EdgeForm[None], 
+    ArrowBox[{{0.998408912512516, 4.931430153830092}, {1.9951590343373207`, 
+     14.355941326709198`}}]}},
   AspectRatio->NCache[
     Rational[1, 2], 0.5],
   Axes->{True, True},
@@ -150,7 +160,7 @@ Cell[BoxData[
   GridLines->{None, None},
   GridLinesStyle->Directive[
     GrayLevel[0.5, 0.4]],
-  ImagePadding->{{18.285714, 22.}, {25.642857, 33.}},
+  ImagePadding->{{22.942124, 23.210938}, {26.201531, 34.5}},
   ImageSize->Large,
   LabelStyle->Large,
   Method->{
@@ -173,14 +183,22 @@ Cell[BoxData[
       FormBox["2", TraditionalForm]}, {3, 
       FormBox["3", TraditionalForm]}, {4, 
       FormBox["4", TraditionalForm]}}, {{5, 
-      FormBox["5", TraditionalForm]}, {16, 
-      FormBox["16", TraditionalForm]}, {24, 
+      FormBox["5", TraditionalForm]}, {19, 
+      FormBox["19", TraditionalForm]}, {24, 
       FormBox["24", TraditionalForm]}, {72, 
       FormBox["72", TraditionalForm]}}}]], "Input",
+ CellChangeTimes->{{3.895250518447404*^9, 3.895250528541988*^9}, {
+   3.8952505862257423`*^9, 3.895250706689118*^9}, {3.895250787711978*^9, 
+   3.895250799389367*^9}, 3.895250831142551*^9, 3.8952623265914097`*^9, 
+   3.895262413125164*^9},ExpressionUUID->"2b693f11-fdcd-4924-8d4f-\
+8f9fc4102d69"],
+
+Cell[BoxData[""], "Input",
  CellChangeTimes->{{3.8948060241760387`*^9, 3.894806082946717*^9}, 
    3.8948061703076305`*^9, {3.8948062629313436`*^9, 3.8948063575195246`*^9}, 
    3.894806514236123*^9, 3.894806555786979*^9, {3.8948066394860353`*^9, 
-   3.894806664979831*^9}},ExpressionUUID->"6f2d474d-5947-4abb-b2a5-\
+   3.894806664979831*^9}, 
+   3.8952623638065777`*^9},ExpressionUUID->"6f2d474d-5947-4abb-b2a5-\
 6887c1c2a371"],
 
 Cell[CellGroupData[{
@@ -287,50 +305,30 @@ Cell[BoxData[
    3.859825898456532*^9, 3.8598259450762444`*^9}, 3.894729699112994*^9, {
    3.8947304779486322`*^9, 3.894730494025323*^9}, {3.894806399336852*^9, 
    3.8948064001933923`*^9}},
- CellLabel->"In[6]:=",ExpressionUUID->"bbf941f6-0eba-40a3-bae7-5f2c1682054f"],
+ CellLabel->"In[9]:=",ExpressionUUID->"bbf941f6-0eba-40a3-bae7-5f2c1682054f"],
 
 Cell[BoxData[
  GraphicsBox[{{}, 
-   GraphicsComplexBox[{{1., 5.}, {2., 16.}, {3., 24.}, {4., 72.}, {1., 0.}, {
-    2., 0.}, {3., 0.}, {4., 0.}, {1., 5.}, {2., 16.}, {3., 24.}, {4., 
+   GraphicsComplexBox[{{1., 5.}, {2., 19.}, {3., 24.}, {4., 72.}, {1., 0.}, {
+    2., 0.}, {3., 0.}, {4., 0.}, {1., 5.}, {2., 19.}, {3., 24.}, {4., 
     72.}}, {{{}, {}, {}, {}, 
       {RGBColor[0.368417, 0.506779, 0.709798], Opacity[0.3], LineBox[{5, 1}], 
        LineBox[{6, 2}], LineBox[{7, 3}], LineBox[{8, 4}]}}, 
      {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
       0.012833333333333334`], AbsoluteThickness[1.6], 
-      PointBox[{9, 10, 11, 12}]}}], {
-    {RGBColor[0.368417, 0.506779, 0.709798], Opacity[0.3], LineBox[{}], 
-     LineBox[{}], LineBox[{}]}, {
-     {Thickness[0.004073802778041122], CapForm["Round"], StrokeForm[{Hue[
-      0.5833333333333334, 0.5, 0.6666666666666666], Opacity[1.]}], EdgeForm[{
-      GrayLevel[0.], Opacity[1.]}], EdgeForm[None], 
-      LineBox[{{2.0007607392146376`, 16.416913930811774`}, {
-       3.0034087907543814`, 16.416913930811766`}}]}, 
-     {Thickness[0.004073802778041122], CapForm["Round"], StrokeForm[{Hue[
-      0.5833333333333334, 0.5, 0.6666666666666666], Opacity[1.]}], EdgeForm[{
-      GrayLevel[0.], Opacity[1.]}], EdgeForm[None], 
-      LineBox[{{3.0034316509470758`, 24.30720235461753}, {4.00018177277188, 
-       24.307202354617516`}}]}, 
-     {Thickness[0.004073802778041122], CapForm["Round"], StrokeForm[{Hue[
-      0.5833333333333334, 0.5, 0.6666666666666666], Opacity[1.]}], EdgeForm[{
-      GrayLevel[0.], Opacity[1.]}], EdgeForm[None], 
-      LineBox[{{1.0040334775825266`, 5.239005330420312}, {2.000783599407331, 
-       5.239005330420312}}]}, 
-     {Thickness[0.004073802778041122], Dashing[{Medium, Medium}], CapForm[
-      "Round"], StrokeForm[{Hue[0.08333333333333333, 0.6666666666666666, 1.], 
-      Opacity[1.]}], EdgeForm[{GrayLevel[0.], Opacity[1.]}], EdgeForm[None], 
-      LineBox[{{1.9948856696923916`, 9.622498899201283}, {4.000181772771877, 
-       9.622498899201275}}]}}}, {
-    {AbsoluteThickness[1.5], CapForm[Square], 
-     LineBox[{{0.00777777995140716, 24.134193575980063`}, {2.994444445025184, 
-      24.134193575980063`}}]}, 
-    {AbsoluteThickness[1.5], CapForm[Square], 
-     LineBox[{{0.015555557725036695`, 72.11354838910074}, {4.005555555597034, 
-      72.11354838910074}}]}}, {
-    {CapForm[Square], 
-     {AbsoluteThickness[1.5], CapForm[Square], 
-      {CapForm[Square], 
-       {CapForm[Square], 
+      PointBox[{9, 10, 11, 12}]}}], {{{{}, {}, {}, {}, 
+      {RGBColor[0.368417, 0.506779, 0.709798], Opacity[0.3], LineBox[{}], 
+       LineBox[{}], LineBox[{}], LineBox[{}]}}, 
+     {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+      0.012833333333333334`], AbsoluteThickness[1.6], PointBox[{}]}}, {{
+      {AbsoluteThickness[1.5], Dashing[{Medium, Medium}], CapForm[Square], 
+       LineBox[{{-0.004018079668386881, 24.079399906450533`}, {
+        2.9826485854053892`, 24.079399906450533`}}]}, 
+      {AbsoluteThickness[1.5], Dashing[{Medium, Medium}], CapForm[Square], 
+       LineBox[{{0.0037596981052426537`, 72.05875471957117}, {
+        3.9937596959772392`, 72.05875471957117}}]}}, {
+      {Dashing[{Medium, Medium}], CapForm[Square], 
+       {AbsoluteThickness[1.5], CapForm[Square], 
         {CapForm[Square], 
          {CapForm[Square], 
           {CapForm[Square], 
@@ -357,12 +355,48 @@ Cell[BoxData[
                     {CapForm[Square], 
                     {CapForm[Square], 
                     {CapForm[Square], 
-                    LineBox[{{0.01944444661185174, 5.058064553895953}, {
-                    0.991666668315555, 
-                    5.058064553895953}}]}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}, 
-    {AbsoluteThickness[1.5], CapForm[Square], 
-     LineBox[{{0.01944444661185174, 16.04129035448984}, {2.010555556661036, 
-      16.04129035448984}}]}}},
+                    {CapForm[Square], 
+                    {CapForm[Square], 
+                    LineBox[{{0.007648586992057699, 5.003270884366433}, {
+                    0.9798708086957607, 
+                    5.003270884366433}}]}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}, 
+      {AbsoluteThickness[1.5], Dashing[{Medium, Medium}], CapForm[Square], 
+       LineBox[{{0.0017506572771179545`, 19.274116861546013`}, {
+        1.9928617673263012`, 19.274116861546013`}}]}}}}, 
+   {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.012833333333333334`], 
+    Thickness[0.004073802778041122], CapForm["Round"], StrokeForm[{Hue[
+    0.5833333333333334, 0.5, 0.6666666666666666], Opacity[1.]}], EdgeForm[{
+    Hue[0.5833371480888075, 0.5000076295109483, 0.6666666666666666], Opacity[
+    1.], Thickness[0.004073802778041122], CapForm["Round"]}], EdgeForm[None], 
+    ArrowBox[{{0.998408912512516, 5.041090794279057}, {1.989261104622381, 
+     5.0410907942790555`}}]}, 
+   {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.012833333333333334`], 
+    Thickness[0.004073802778041122], CapForm["Round"], StrokeForm[{Hue[
+    0.5833333333333334, 0.5, 0.6666666666666666], Opacity[1.]}], EdgeForm[{
+    Hue[0.5833371480888075, 0.5000076295109483, 0.6666666666666666], Opacity[
+    1.], Thickness[0.004073802778041122], CapForm["Round"]}], EdgeForm[None], 
+    ArrowBox[{{1.9951590343373211`, 19.287444892817206`}, {
+     2.9978070858770653`, 19.2874448928172}}]}, 
+   {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.012833333333333334`], 
+    Thickness[0.004073802778041122], CapForm["Round"], StrokeForm[{Hue[
+    0.5833333333333334, 0.5, 0.6666666666666666], Opacity[1.]}], EdgeForm[{
+    Hue[0.5833371480888075, 0.5000076295109483, 0.6666666666666666], Opacity[
+    1.], Thickness[0.004073802778041122], CapForm["Round"]}], EdgeForm[None], 
+    ArrowBox[{{3.0155008750218846`, 24.328462496915336`}, {
+     3.9886592779869297`, 24.10928781847627}}]}, 
+   {Thickness[0.004073802778041122], Dashing[{Medium, Medium}], CapForm[
+    "Round"], StrokeForm[{Hue[0.08333333333333333, 1., 1.], Opacity[1.]}], 
+    EdgeForm[GrayLevel[0]], EdgeForm[None], 
+    LineBox[{{1.9951590343373211`, 17.095698108426717`}, {4.00635306713175, 
+     17.31487278686574}}]}, 
+   {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.012833333333333334`], 
+    Thickness[0.004073802778041122], Dashing[{Medium, Medium}], CapForm[
+    "Round"], StrokeForm[{Hue[0.08333333333333333, 1., 1.], Opacity[1.]}], 
+    EdgeForm[{Hue[0.5833371480888075, 0.5000076295109483, 0.6666666666666666],
+     Opacity[1.], Thickness[0.004073802778041122], CapForm["Round"]}], 
+    EdgeForm[None], 
+    ArrowBox[{{1.9951590343373211`, 16.876523429987685`}, {2.986011226447186, 
+     17.31487278686577}}]}},
   AspectRatio->NCache[
     Rational[1, 2], 0.5],
   Axes->{True, True},
@@ -378,7 +412,7 @@ Cell[BoxData[
   GridLines->{None, None},
   GridLinesStyle->Directive[
     GrayLevel[0.5, 0.4]],
-  ImagePadding->{{18.285714, 22.}, {25.642857, 33.}},
+  ImagePadding->{{22.942124, 23.210938}, {26.201531, 34.5}},
   ImageSize->Large,
   LabelStyle->Large,
   Method->{
@@ -401,14 +435,13 @@ Cell[BoxData[
       FormBox["2", TraditionalForm]}, {3, 
       FormBox["3", TraditionalForm]}, {4, 
       FormBox["4", TraditionalForm]}}, {{5, 
-      FormBox["5", TraditionalForm]}, {16, 
-      FormBox["16", TraditionalForm]}, {24, 
+      FormBox["5", TraditionalForm]}, {19, 
+      FormBox["19", TraditionalForm]}, {24, 
       FormBox["24", TraditionalForm]}, {72, 
       FormBox["72", TraditionalForm]}}}]], "Input",
- CellChangeTimes->{{3.8948064237117643`*^9, 3.894806468203826*^9}, {
-  3.8948065217589035`*^9, 
-  3.8948065782126255`*^9}},ExpressionUUID->"e36c63e1-e0bb-4c6f-b3a2-\
-a529d032ba76"],
+ CellChangeTimes->{{3.8952625269526777`*^9, 
+  3.895262648688493*^9}},ExpressionUUID->"1663ea20-2437-46f7-8bf2-\
+8f4d1e70c7ec"],
 
 Cell[CellGroupData[{
 
@@ -494,9 +527,9 @@ Cell[BoxData[
 In[2]:=",ExpressionUUID->"133f04b2-d2bb-46ae-8967-f7b18b4f2265"]
 }, Open  ]]
 },
-WindowSize->{1903, 1041},
-WindowMargins->{{0, Automatic}, {Automatic, 0}},
-FrontEndVersion->"12.1 for Microsoft Windows (64-bit) (June 9, 2020)",
+WindowSize->{2578.5, 1064.25},
+WindowMargins->{{0.75, Automatic}, {0.75, Automatic}},
+FrontEndVersion->"12.2 for Linux x86 (64-bit) (December 12, 2020)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"4e2f268b-4c60-483b-9b53-98234e733853"
 ]
@@ -511,20 +544,21 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 287, 6, 28, "Input",ExpressionUUID->"7293aa46-9672-453f-951c-0746dbaa69a7"],
-Cell[848, 28, 1093, 23, 28, "Input",ExpressionUUID->"6a43f90b-0736-406f-ba05-c6bc1d5f7f87"],
-Cell[1944, 53, 5861, 130, 340, InheritFromParent,ExpressionUUID->"6f2d474d-5947-4abb-b2a5-6887c1c2a371"],
+Cell[558, 20, 385, 8, 29, "Input",ExpressionUUID->"7293aa46-9672-453f-951c-0746dbaa69a7"],
+Cell[946, 30, 1093, 23, 29, "Input",ExpressionUUID->"6a43f90b-0736-406f-ba05-c6bc1d5f7f87"],
+Cell[2042, 55, 6738, 138, 338, InheritFromParent,ExpressionUUID->"2b693f11-fdcd-4924-8d4f-8f9fc4102d69"],
+Cell[8783, 195, 357, 6, 29, "Input",ExpressionUUID->"6f2d474d-5947-4abb-b2a5-6887c1c2a371"],
 Cell[CellGroupData[{
-Cell[7830, 187, 1453, 31, 28, "Input",ExpressionUUID->"b75f9e30-f477-48a9-a97a-7e843aa0bcef"],
-Cell[9286, 220, 2261, 43, 156, "Output",ExpressionUUID->"da6076d1-40b4-4268-8ad9-c506a7bea034"]
+Cell[9165, 205, 1453, 31, 29, "Input",ExpressionUUID->"b75f9e30-f477-48a9-a97a-7e843aa0bcef"],
+Cell[10621, 238, 2261, 43, 155, "Output",ExpressionUUID->"da6076d1-40b4-4268-8ad9-c506a7bea034"]
 }, Open  ]],
-Cell[11562, 266, 1045, 23, 28, "Input",ExpressionUUID->"bbf941f6-0eba-40a3-bae7-5f2c1682054f"],
-Cell[12610, 291, 5240, 119, 340, InheritFromParent,ExpressionUUID->"e36c63e1-e0bb-4c6f-b3a2-a529d032ba76"],
+Cell[12897, 284, 1045, 23, 29, "Input",ExpressionUUID->"bbf941f6-0eba-40a3-bae7-5f2c1682054f"],
+Cell[13945, 309, 6528, 134, 338, InheritFromParent,ExpressionUUID->"1663ea20-2437-46f7-8bf2-8f4d1e70c7ec"],
 Cell[CellGroupData[{
-Cell[17875, 414, 712, 14, 28, "Input",ExpressionUUID->"c784ad3a-f14b-456f-9331-497bb261fda0"],
-Cell[18590, 430, 1940, 39, 100, "Output",ExpressionUUID->"1abfdc9d-c3e1-4e29-b1c9-3d41e8f1545d"],
-Cell[20533, 471, 445, 10, 23, "Message",ExpressionUUID->"1986008d-3e0c-41a9-9d94-6d8d4e6d5f2d"],
-Cell[20981, 483, 443, 10, 23, "Message",ExpressionUUID->"133f04b2-d2bb-46ae-8967-f7b18b4f2265"]
+Cell[20498, 447, 712, 14, 29, "Input",ExpressionUUID->"c784ad3a-f14b-456f-9331-497bb261fda0"],
+Cell[21213, 463, 1940, 39, 98, "Output",ExpressionUUID->"1abfdc9d-c3e1-4e29-b1c9-3d41e8f1545d"],
+Cell[23156, 504, 445, 10, 22, "Message",ExpressionUUID->"1986008d-3e0c-41a9-9d94-6d8d4e6d5f2d"],
+Cell[23604, 516, 443, 10, 22, "Message",ExpressionUUID->"133f04b2-d2bb-46ae-8967-f7b18b4f2265"]
 }, Open  ]]
 }
 ]
