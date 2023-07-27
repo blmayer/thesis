@@ -1,0 +1,208 @@
+\ProvidesPackage{PnuPresentStyle.sty}
+
+\usepackage[portuguese]{babel} % Языки: русский, английский
+\usepackage{fontspec}
+\usepackage{subcaption}
+
+\setmainfont{Arial}
+\setromanfont{Times New Roman} 
+\setsansfont{Arial} 
+\setmonofont{Courier New} 
+
+\newlength{\newoffset}
+\newlength{\barwidth}
+\newlength{\sidebar}
+
+\usepackage{cmap}
+\usepackage{hyperref} % рабочие ссылки в документе
+
+% графика
+\usepackage{graphicx}
+
+%%% Математические пакеты %%%
+\usepackage{braket, amssymb, amsmath,array, commath, mathtext, wrapfig, tikz}
+\usepackage{epsfig,mathtext} % если нужны русские буквы в формулах
+\usepackage{bm} % bold math
+
+\usepackage[font=footnotesize]{caption}
+
+\usepackage[% 
+backend=biber, %подключение пакета biber (тоже нужен)
+%bibstyle=gost-authoryear,
+bibstyle=numeric,
+%bibstyle=gost-numeric, %подключение одного из четырех главных стилей biblatex-gost 
+ citestyle=ieee,
+%citestyle=numeric-comp, %подключение стиля стиля (а вот!) 
+language=auto, %указание сортировки языков
+%sorting=ntvy, %тип сортировки в библиографии
+sorting=none, %тип сортировки в библиографии
+doi=false, 
+eprint=false, 
+isbn=false, 
+%dashed=false, 
+url=true %все false выключают отображение полей, заполненных в библиографической базе, но не актуальных для печатного листа
+]{biblatex}
+
+\definecolor{universityblue}{RGB}{194, 64, 55}
+\definecolor{secondaryblue}{RGB}{197, 50, 54}
+\definecolor{universitygray}{RGB}{146, 146, 146}
+\definecolor{lightgray}{RGB}{216, 216, 216}
+
+% \useinnertheme{circles}
+\useoutertheme[right]{sidebar}
+\usecolortheme{sidebartab}
+\usecolortheme[named=universityblue]{structure}
+
+\setbeamercolor{title}{bg=universityblue, fg=white}
+\setbeamercolor{author in head/foot}{bg=universitygray, fg=white}
+\setbeamercolor{sidebar right}{bg=universityblue, fg=white}
+\setbeamercolor{title in sidebar}{fg=white}
+\setbeamercolor{author in sidebar}{fg=white}
+\setbeamercolor{section in sidebar shaded}{fg=lightgray}
+\setbeamercolor{section in sidebar}{fg=white,bg=secondaryblue}
+\setbeamercolor{subsection in sidebar shaded}{fg=lightgray}
+\setbeamercolor{subsection in sidebar}{fg=white,bg=secondaryblue}
+\setbeamercolor{navigation symbols dimmed}{fg=white}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setlength{\hoffset}{1pt}
+\setbeamertemplate{sidebar canvas right}[vertical shading][top=universityblue, bottom=universityblue]
+
+
+\setbeamertemplate{navigation symbols}{}
+\makeatletter
+\setlength\sidebar{\beamer@rightsidebar}
+\setlength{\barwidth}{\dimexpr\paperwidth-\sidebar-\hoffset}
+
+\setbeamertemplate{footline}
+{%
+    \leavevmode%
+    \hbox{%
+        \begin{beamercolorbox}[wd=0.7\barwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+            \usebeamerfont{title in head/foot}%
+        \end{beamercolorbox}%
+        
+        \begin{beamercolorbox}[wd=0.3\barwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+            \usebeamerfont{title in head/foot}%
+            \vspace{-1.5pt}
+            \insertslidenavigationsymbol%
+            \insertframenavigationsymbol%
+            \insertsubsectionnavigationsymbol%
+           \end{beamercolorbox}
+    
+        \begin{beamercolorbox}[wd=\dimexpr\sidebar-\hoffset,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+            \usebeamerfont{title in head/foot}\insertframenumber/\inserttotalframenumber
+        \end{beamercolorbox}%
+    }
+}
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\makeatletter
+  \setbeamertemplate{sidebar \beamer@sidebarside}
+  {
+    \beamer@tempdim=\beamer@sidebarwidth
+    \vskip1em
+    \insertverticalnavigation{\beamer@sidebarwidth}%
+    \vfill
+    \ifx\beamer@sidebarside\beamer@lefttext%
+    \else%
+      \usebeamercolor{normal text}%
+      \llap{\usebeamertemplate***{navigation symbols}\hskip0.1cm}%
+      \vskip2pt%
+    \fi%
+  }%
+
+  \ifx\beamer@sidebarside\beamer@lefttext%
+    \defbeamertemplate*{sidebar right}{sidebar theme}
+    {%
+      \vfill%
+      \llap{\usebeamertemplate***{navigation symbols}\hskip0.1cm}%
+      \vskip2pt}
+  \fi
+
+\setbeamertemplate{section in sidebar}%{sidebar theme}
+{%
+  \vbox{%
+    \vskip1ex%
+    \beamer@sidebarformat{3pt}{section in sidebar}{~\insertsectionhead}%
+  }%
+}
+\setbeamertemplate{section in sidebar shaded}%{sidebar theme}
+{%
+  \vbox{%
+    \vskip1ex%
+    \beamer@sidebarformat{3pt}{section in sidebar shaded}{~\insertsectionhead}%
+  }%
+}
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newenvironment{titleframe}
+{
+    \begingroup
+   \advance\textwidth1.5cm % 
+    \hsize\textwidth
+    \columnwidth\textwidth
+    \usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{titleback}}
+    \begin{frame}[plain]
+}
+{
+    \end{frame}
+    \endgroup
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newenvironment{nobarframe}
+{
+    \begingroup
+    \advance\textwidth1.5cm % 
+    \hsize\textwidth
+    \columnwidth\textwidth
+    \begin{frame}[plain]
+}
+{
+    \end{frame}
+    \endgroup
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\usepackage{ragged2e} % выравнивание текста
+\justifying
+
+% University logo and wordmark
+\logo{\includegraphics[scale=0.05]{images/M_vermelho.pdf}}
+%\titlegraphic{\includegraphics[height=5cm]{PNUmark}}
+
+% Superscript removal for hyperref recognition in pdf string
+\newcommand{\supersc}[1]{\texorpdfstring{\textsuperscript{#1}}{}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Изображения %%%
+\renewcommand{\figurename}{Mack}
+
+%\DeclareCaptionLabelSeparator{dot}{.~}
+\captionsetup[figure]{justification=raggedright, singlelinecheck=false,	format=hang, font=small, labelfont=small, labelsep=endash, position=above, singlelinecheck=off}
+\captionsetup[subfigure]{justification=centering, singlelinecheck=false,	format=hang, font=small, labelfont=small, labelsep=endash, position=above, singlelinecheck=off}
+
+\captionsetup[table]{font=small,labelfont=small,textfont=small,labelsep=endash,format=hang,position= above, justification=raggedright, singlelinecheck=off}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\institute{Universidade Presbiteriana Mackenzie}
+
+\author{Aluno: Brian Lee Mayer\\	\phantom{jkhgbujkyg:\quad} \\ Orientador:\quad Luiz Henrique Alves Monteiro}
+
+\title{\textbf{\large \uppercase{INVESTIGANDO SEQUENCIAS DE $d$-PRIMOS E DE DIVISORES COM ALGORITMOS DE VISIBILIDADE}}}
+\subtitle{\textbf{\large \vkrtheme}}
+\date{São Paulo \\ \the\year} 
+
+\setbeamertemplate{bibliography item}{\insertbiblabel}
+\setbeamertemplate{caption}[numbered]
+
+\graphicspath{\imagedir}
+\AtBeginBibliography{\small}
+\addbibresource{\libfile}
